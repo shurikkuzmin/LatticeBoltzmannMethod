@@ -35,7 +35,7 @@ double feq[npop];
 
 void writeFile(std::string name, double* f, int n)
 {
-	name="tmp/"+name;
+	//name="tmp/"+name;
 	std::ofstream fout(name.c_str());
 	for(int counterX=0;counterX<nx;counterX++)
 	{	
