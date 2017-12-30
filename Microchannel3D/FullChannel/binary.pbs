@@ -1,0 +1,59 @@
+#!/bin/bash
+# Script for running serial program on glacier
+#PBS -S /bin/bash
+#PBS -l walltime=80:00:00
+#PBS -l mem=10GB
+#PBS -l procs=32
+###PBS -l nodes=2:ppn=16
+###PBS -l pmem=10000m
+
+### send mail to address :
+#PBS -M kuzmin@ualberta.ca
+### n-no mail, b-execution begun, e-job terminates,a-job aborted (bea)
+#PBS -m be
+###PBS -l procs=16
+
+### specify number of cpus
+###PBS -l ncpus=1
+### MP_PROCS should be set to the number of processors required
+### This should never exceed the TORQUE ncpus request above
+### but in the case of large memory jobs may be less than ncpus
+### export MP_PROCS=1
+### export OMP_NUM_THREADS=$MP_PROCS
+### by default TORQUE executes your job from your home directory
+### PBS_O_WORKDIR sets directory from which you issued the 'qsub' command
+
+cd $PBS_O_WORKDIR
+echo "Current working directory is `pwd`"
+
+str="Date = $(date)"
+str=$str"\nHost = $PBS_O_HOST"
+str=$str"\nJob queue = $PBS_O_QUEUE"
+str=$str"\nCurrent job = $PBS_JOBNAME"
+str=$str"\nUnique pbs job id = $PBS_JOBID"
+str=$str"\nName of submitting user = $PBS_O_LOGNAME"
+str=$str"\nNode offset number = $PBS_NODENUM"
+str=$str"\nHome directory of submitting user = $PBS_O_HOME"
+str=$str"\nWorking directory = $PBS_O_WORKDIR"
+str=$str"\nCurrent working directory = $(pwd)"
+str=$str"\nScript shell = $PBS_O_SHELL"
+str=$str"\nNumber of tasks requested = $PBS_TASKNUM"
+str=$str"\nPath = $PBS_O_PATH"
+echo -e $str
+
+### status of my job
+echo "Status of my job"
+#echo -e "`qstat -f ${PBS_JOBID}`"
+
+str="Starting run at =`date`"
+
+module load mpi/intel_mpi-64/3.2.2
+#source /global/scratch/software/intel/itac/8.0.1.009/bin/itacvars.sh
+#export PATH=/global/scratch/software/intel/impi/3.2.2.006/bin64:$PATH
+#module load intel/compilers-64/11.1r072
+#module load mpi/intel_mpi-64/3.2.2
+module load vtk
+#unset TMPDIR
+#export -n TMPDIR
+mpiexec  -n 32 ./main.out TOCHANGE > output.txt
+echo "Job finished with exit code $? at: `date`"
