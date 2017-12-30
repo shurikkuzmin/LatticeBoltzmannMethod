@@ -10,5 +10,6 @@ Here some simple codes for the Lattice Boltzmann Method are presented. Along wit
 3. Shan-Chen gas-liquid model programmed on GPU with OpenCL technology.
 
 4. Binary liquid model of the long gas bubbles in 3D microchannels (Bretherton flow). The implementation is parallelized in MPI. Two different implementations are covering full scale simulation and quarter channel simulations with symmetry conditions.
+
 ![alt text](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/Microchannel3D/benchmark.jpg "Long gas bubbles in the 3D microchannels")
 
