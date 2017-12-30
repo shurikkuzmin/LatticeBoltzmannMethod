@@ -1,0 +1,17 @@
+giffiles	:= height*.gif
+datfiles	:= height*.dat
+anim: $(giffiles)
+	rm $(datfiles)
+	gifsicle -d 5 -l $(giffiles)  > anim.gif  
+	rm $(giffiles)
+	#gifsicle-new anim.gif '#1-10' > anim_corrected.gif
+$(giffiles): $(datfiles)
+	for x in $(datfiles); \
+	do \
+	echo "call 'plot.gp' '$$x'" | gnuplot; \
+	done 
+# done 
+#proba*.gif: #proba*.dat
+#	echo test
+           #echo "call 'plot.gp' '$@'" | gnuplot
+ 
