@@ -13,3 +13,7 @@ Here some simple codes for the Lattice Boltzmann Method are presented. Along wit
 
 ![alt text](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/Microchannel3D/benchmark.jpg "Long gas bubbles in the 3D microchannels")
 
+5. The binary liquid droplets on the curved surface. The boundary condition for a phase field is established in a such way as to control the wetting angle.
+![alt text](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/CurvedSolid/droplet_on_surface.png "Three droplets on the solid surface")
+
+
