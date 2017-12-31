@@ -22,3 +22,9 @@ Here some simple codes for the Lattice Boltzmann Method are presented. Along wit
 7. Propagation of the Gaussian hill via advection-diffusion equation modeled by two-relaxation-times LB model.
 ![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/GaussianHill/gaussian_hill.jpg "Gaussian hill")
 
+8. 2D multiple-relaxation-times codes with two different approaches: through Gram-Schmidt procedure and through Hermite polynomials approach.
+
+9. The free-surface code that reads velocities and geometry of the bubble from files, and then imposes the velocity of the walls that bubble stays in the center (reference frame of the bubble). The bubble surface is the subject to the free surface boundary condition, that no normal velocity components do exist. That allows to cleanup the LB multiphase simulation to get rid of non-zero divergence at the bubble surface to be able to perform proper mass transfer calculations. Otherwise non-zero divergence at the surface of the bubble makes mass transfer simulations unstable leading to an infinite accumalation of mass.
+![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/FreeSurface/free_surface.jpg "Velocity streamlines")
+
+
