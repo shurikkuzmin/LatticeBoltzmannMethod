@@ -19,3 +19,6 @@ Here some simple codes for the Lattice Boltzmann Method are presented. Along wit
 6. Deposition of the droplet to the curved solid.
 ![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/Deposition/deposition.gif "Deposition of the droplet to the surface")
 
+7. Propagation of the Gaussian hill via advection-diffusion equation modeled by two-relaxation-times LB model.
+![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/GaussianHill/gaussian_hill.jpg "Gaussian hill")
+
