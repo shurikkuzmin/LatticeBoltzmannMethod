@@ -17,8 +17,5 @@ Here some simple codes for the Lattice Boltzmann Method are presented. Along wit
 ![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/CurvedSolid/droplet_on_solid.png "Three droplets on the solid surface")
 
 6. Deposition of the droplet to the curved solid.
-<video width="400" height="222" controls>
-    <source src="https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/Deposition/deposition.avi" type="video/avi">
-</video>
-
+![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/Deposition/deposition.gif "Deposition of the droplet to the surface")
 
