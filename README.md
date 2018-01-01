@@ -20,6 +20,8 @@ Here some simple codes for the Lattice Boltzmann Method are presented. Along wit
 ![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/Deposition/deposition.gif "Deposition of the droplet to the surface")
 
 7. Propagation of the Gaussian hill via advection-diffusion equation modeled by two-relaxation-times LB model.
+![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/GaussianHill/gaussian_hill_theoretical.jpg "Theoretical profiles of Gaussian hills")
+
 ![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/GaussianHill/gaussian_hill.jpg "Gaussian hill")
 
 8. 2D multiple-relaxation-times codes with two different approaches: through Gram-Schmidt procedure and through Hermite polynomials approach.
@@ -29,6 +31,11 @@ Here some simple codes for the Lattice Boltzmann Method are presented. Along wit
 
 10. The diffusion from the boundary of 2D cylinder into the inside cylinder domain. Two boundary conditions of the constant concentration are presented: Inamuro and anti-bounce-back conditions.
 ![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/DiffusionCylinder/cylinder_profile.jpg "Concentration dependence on radius with different times")
+
+11. The thermal layer development from the wall with the uniform velocity profile.
+![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/DiffusionChannelUniform/uniform_profile_benchmark.jpg "Boundary conditions for the thermal layer development with the uniform velocity profile")
+
+![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/DiffusionChannelUniform/uniform_profile.jpg "Concentration profiles for the thermal layer development with the uniform velocity profile")
 
 
 
