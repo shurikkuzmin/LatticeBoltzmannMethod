@@ -40,4 +40,8 @@ Here some simple codes for the Lattice Boltzmann Method are presented. Along wit
 
 ![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/DiffusionChannelPoiseuille/poiseuille_profile.jpg "Concentration profiles for the thermal layer development with the uniform velocity profile")
 
+13. Drag for steady cylinder simulated by immersed boundary method.
+![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/SteadyCylinderImmersedBoundary/steady_cylinder.jpg "Domain for the steady cylinder")
+
+![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/SteadyCylinderImmersedBoundary/steady_cylinder_drags.jpg "Drag coefficients from literature")
 
