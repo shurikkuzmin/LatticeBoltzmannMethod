@@ -50,5 +50,5 @@ Here some simple codes for the Lattice Boltzmann Method are presented. Along wit
 
 ![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/MovingCylinderImmersedBoundary/moving_cylinder_setup.png "Domain for the steady cylinder")
 
-![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/SteadyCylinderImmersedBoundary/moving_cylinder.png "Drag coefficients from literature")
+![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/MovingCylinderImmersedBoundary/moving_cylinder.png "Drag coefficients from literature")
 
