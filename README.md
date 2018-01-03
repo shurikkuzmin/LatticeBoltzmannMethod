@@ -52,3 +52,10 @@ Here some simple codes for the Lattice Boltzmann Method are presented. Along wit
 
 ![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/MovingCylinderImmersedBoundary/moving_cylinder.png "Drag coefficients from literature")
 
+15. Falling ellipse by gravity simulated with the immersed boundary method.
+
+![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/FallingEllipseImmersedBoundary/ellipse_init.png "Sketch for the falling ellipse in the fluid by gravity")
+
+![](https://github.com/shurikkuzmin/LatticeBoltzmannMethod/blob/master/FallingEllipseImmersedBoundary/falling_ellipse_results.png "Results comparson for the trajectory")
+
+
